@@ -1,0 +1,241 @@
+.simple {
+    margin-bottom: 50px;
+    position: relative;
+
+    &::after {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        width: 390px;
+        height: 780px;
+        top: -14%;
+        right: 0;
+        display: block;
+        background-image: url('../images/right__grey-mask.svg');
+        background-repeat: no-repeat;
+    }
+
+    &__container {
+        @include df-row-between;
+    }
+
+    &__left-box {
+        width: 100%;
+        max-width: 445px;
+        @include df-column-starts;
+    }
+
+    &__title {
+        width: 445px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        color: $san_juan_blue;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        width: 445px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        color: $light_san_juan_blue;
+    }
+}
+
+@media (max-width:1288px) {
+    .simple {
+        position: relative;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-bottom: 50px;
+
+        &::after {
+            z-index: -1;
+            position: absolute;
+            content: '';
+            width: 390px;
+            height: 780px;
+            top: -14%;
+            right: 0;
+            display: none;
+            background-image: url('../images/right__grey-mask.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            width: 100%;
+            max-width: 1288px;
+            @include df-column-reverse-center;
+        }
+
+        &__left-box {
+            width: 100%;
+            max-width: 573px;
+            @include df-column-center;
+        }
+
+        &__title {
+            text-align: center;
+            width: 573px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369231px;
+            color: $san_juan_blue;
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            text-align: center;
+            width: 573px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            color: $light_san_juan_blue;
+        }
+
+        &__smartphone-image {
+            transform: translateX(40px);
+            width: 722px;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width:790px) {
+    .simple {
+        position: relative;
+        padding-left: 39px;
+        padding-right: 39px;
+        margin-bottom: 100px;
+
+        &::after {
+            z-index: -1;
+            position: absolute;
+            content: '';
+            width: 390px;
+            height: 780px;
+            top: -14%;
+            right: 0;
+            display: none;
+            background-image: url('../images/right__grey-mask.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            width: 100%;
+            max-width: 790px;
+            @include df-column-reverse-center;
+        }
+
+        &__left-box {
+            width: 100%;
+            max-width: 573px;
+            @include df-column-center;
+        }
+
+        &__title {
+            text-align: center;
+            width: 573px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369231px;
+            color: $san_juan_blue;
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            text-align: center;
+            width: 573px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            color: $light_san_juan_blue;
+        }
+
+        &__smartphone-image {
+            transform: translateX(20px);
+            width: 522px;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .simple {
+        position: relative;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-bottom: 80px;
+
+        &::after {
+            z-index: -1;
+            position: absolute;
+            content: '';
+            width: 390px;
+            height: 780px;
+            top: -14%;
+            right: 0;
+            display: none;
+            background-image: url('../images/right__grey-mask.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            width: 100%;
+            max-width: 575px;
+            @include df-column-reverse-center;
+        }
+
+        &__left-box {
+            width: 100%;
+            max-width: 573px;
+            @include df-column-center;
+        }
+
+        &__title {
+            text-align: center;
+            width: 327px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 36px;
+            letter-spacing: -0.276923px;
+            color: $san_juan_blue;
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            text-align: center;
+            width: 328px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            color: $light_san_juan_blue;
+        }
+
+        &__smartphone-image {
+            transform: translateX(11px);
+            width: 322px;
+            height: auto;
+        }
+    }
+}

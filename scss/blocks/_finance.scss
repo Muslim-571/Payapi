@@ -1,0 +1,269 @@
+.finance {
+    margin-bottom: 200px;
+
+    &__main-box {
+        @include df-row-center;
+        width: 100%;
+        max-width: 1206px;
+    }
+
+    &__first-box {
+        width: 100%;
+        max-width: 350px;
+        @include df-column-center;
+    }
+
+    &__images {
+        margin-bottom: 32px;
+    }
+
+    &__titles {
+        width: 350px;
+        text-align: center;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.138462px;
+        color: $san_juan_blue;
+        margin-bottom: 22px;
+    }
+
+    &__texts {
+        width: 350px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.115385px;
+        color: $light_san_juan_blue;
+    }
+
+    &__second-box {
+        width: 100%;
+        max-width: 350px;
+        @include df-column-center;
+    }
+
+    &__third-box {
+        width: 100%;
+        max-width: 350px;
+        @include df-column-center;
+    }
+}
+
+@media (max-width:1080px) {
+    .finance {
+        margin-bottom: 100px;
+
+        &__container {
+            width: 100%;
+            max-width: 1080px;
+        }
+
+        &__main-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 1080px;
+        }
+
+        &__first-box {
+            width: 100%;
+            max-width: 223px;
+            height: auto;
+            @include df-column-center;
+        }
+
+        &__images {
+            width: 88px;
+            height: auto;
+            margin-bottom: 32px;
+        }
+
+        &__titles {
+            width: 223px;
+            text-align: center;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: -0.138462px;
+            color: $san_juan_blue;
+            margin-bottom: 16px;
+        }
+
+        &__texts {
+            width: 223px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: -0.115385px;
+            color: $light_san_juan_blue;
+        }
+
+        &__second-box {
+            height: auto;
+            max-width: 223px;
+            @include df-column-center;
+        }
+
+        &__third-box {
+            height: auto;
+            max-width: 223px;
+            @include df-column-center;
+        }
+    }
+}
+
+@media (max-width:860px) {
+    .finance {
+        margin-bottom: 100px;
+
+        &__container {
+            width: 100%;
+            @include df-row-between;
+            max-width: 860px;
+        }
+
+        &__main-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 689px;
+        }
+
+        &__first-box {
+            width: 100%;
+            max-width: 103px;
+            height: auto;
+            @include df-column-center;
+        }
+
+        &__images {
+            width: 88px;
+            height: auto;
+            margin-bottom: 32px;
+        }
+
+        &__titles {
+            width: 223px;
+            text-align: center;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: -0.138462px;
+            color: $san_juan_blue;
+            margin-bottom: 16px;
+        }
+
+        &__texts {
+            width: 223px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: -0.115385px;
+            color: $light_san_juan_blue;
+        }
+
+        &__second-box {
+            height: auto;
+            max-width: 103px;
+            @include df-column-center;
+        }
+
+        &__third-box {
+            height: auto;
+            max-width: 103px;
+            @include df-column-center;
+        }
+    }
+}
+
+@media (max-width:750px) {
+    .finance {
+        margin-bottom: 100px;
+
+        &__container {
+            width: 100%;
+            @include df-column-center;
+            max-width: 750px;
+        }
+
+        &__main-box {
+            @include df-column-center;
+            width: 100%;
+            max-width: 328px;
+            gap: 48px;
+            height: auto;
+        }
+
+        &__first-box {
+            width: 100%;
+            max-width: 103px;
+            height: auto;
+            @include df-column-center;
+        }
+
+        &__images {
+            width: 106px;
+            height: auto;
+            margin-bottom: 33px;
+        }
+
+        &__titles {
+            width: 328px;
+            text-align: center;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: -0.138462px;
+            color: $san_juan_blue;
+            margin-bottom: 16px;
+        }
+
+        &__texts {
+            width: 328px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: -0.115385px;
+            color: $light_san_juan_blue;
+        }
+
+        &__second-box {
+            height: auto;
+            max-width: 103px;
+            @include df-column-center;
+        }
+
+        &__third-box {
+            height: auto;
+            max-width: 103px;
+            @include df-column-center;
+        }
+    }
+}

@@ -1,0 +1,176 @@
+.ready {
+    margin-bottom: 100px;
+
+    &__container {
+        @include df-row-between;
+    }
+
+    &__title {
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        color: $san_juan_blue;
+    }
+
+    &__form {
+        @include df-row-center;
+    }
+
+    &__main-input {
+        @include df-row-center;
+    }
+
+    &__input {
+        z-index: -1;
+        transform: translateX(173px);
+        width: 445px;
+        height: 48px;
+        background: $link_water_white;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        border-radius: 24px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: $san_juan_blue;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        padding-left: 27px;
+
+        &:focus {
+            color: $san_juan_blue;
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width:970px) {
+    .ready {
+        margin-bottom: 100px;
+
+        &__container {
+            width: 100%;
+            max-width: 970px;
+            @include df-column-center;
+            gap: 40px;
+        }
+
+        &__title {
+            width: 445px;
+            text-align: center;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369231px;
+            color: $san_juan_blue;
+        }
+
+        &__form {
+            @include df-row-center;
+        }
+
+        &__main-input {
+            @include df-column-center;
+        }
+
+        &__input {
+            z-index: -1;
+            transform: translateX(0px);
+            width: 445px;
+            height: 48px;
+            background: $link_water_white;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            padding-left: 27px;
+
+            &:focus {
+                color: $san_juan_blue;
+                opacity: 1;
+            }
+        }
+
+        &__button {
+            transform: translate(136px, -48px);
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .ready {
+        padding-right: 24px;
+        padding-left: 24px;
+        margin-bottom: 80px;
+
+        &__container {
+            width: 100%;
+            max-width: 480px;
+            @include df-column-center;
+            gap: 32px;
+        }
+
+        &__title {
+            width: 328px;
+            text-align: center;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: -0.246154px;
+            color: $san_juan_blue;
+        }
+
+        &__form {
+            @include df-column-center;
+        }
+
+        &__main-input {
+            gap: 16px;
+            @include df-column-center;
+        }
+
+        &__input {
+            z-index: -1;
+            transform: translateX(0px);
+            width: 328px;
+            height: 48px;
+            background: $link_water_white;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            padding-left: 27px;
+
+            &:focus {
+                color: $san_juan_blue;
+                opacity: 1;
+            }
+        }
+
+        &__button {
+            width: 328px;
+            height: 48px;
+            transform: translateX(0px);
+        }
+    }
+}

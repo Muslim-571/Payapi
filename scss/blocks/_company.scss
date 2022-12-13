@@ -1,0 +1,617 @@
+.company {
+    margin-bottom: 100px;
+
+    &__container {
+        @include df-row-between
+    }
+
+    &__left {
+        width: 100%;
+        max-width: 445px;
+        height: auto;
+        @include df-column-starts;
+    }
+
+    &__field textarea {
+        width: 100%;
+        @include df-column-starts;
+        padding-left: 20px;
+        padding-top: 15px;
+        gap: 24px;
+        border-bottom: 1px solid $san_juan_blue;
+        color: $san_juan_blue;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        transition: 40ms ease all;
+
+        &:focus {
+            opacity: 1;
+            border-bottom: 1px solid $san_juan_blue;
+            transition: 40ms ease all;
+        }
+    }
+
+    input[type="text"] {
+        width: 100%;
+        border-bottom: 1px solid $san_juan_blue;
+        padding-left: 20px;
+        padding-top: 24px;
+        padding-bottom: 15px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        color: $san_juan_blue;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        transition: 40ms ease all;
+
+        &:focus {
+            opacity: 1;
+            border-bottom: 1px solid $san_juan_blue;
+            transition: 40ms ease all;
+        }
+    }
+
+    input[type="email"] {
+        width: 100%;
+        border-bottom: 1px solid $san_juan_blue;
+        padding-left: 20px;
+        padding-top: 24px;
+        padding-bottom: 15px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        color: $san_juan_blue;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        transition: 40ms ease all;
+
+        &:focus {
+            opacity: 1;
+            border-bottom: 1px solid $san_juan_blue;
+            transition: 40ms ease all;
+        }
+    }
+
+    &__checkbox {
+        width: 100%;
+        width: 445px;
+        height: 50px;
+        margin: 0;
+        padding-top: 34px;
+        margin-bottom: 34px;
+        @include df-row-center;
+    }
+
+    &__checkbox-title {
+        margin-left: 24px;
+        width: 395px;
+        height: auto;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        color: $san_juan_blue;
+    }
+
+    input[type="checkbox"] {
+        text-align: center;
+        line-height: 24px;
+        appearance: none;
+        -webkit-appearance: none;
+        width: 24px;
+        height: 24px;
+        background: $san_juan_blue;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+
+    input[type="checkbox"]:after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f00c";
+        font-size: 15px;
+        color: $white;
+        display: none;
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: $dark_pink;
+        opacity: 1;
+    }
+
+    input[type="checkbox"]:checked:after {
+        display: block;
+    }
+
+    &__double-btns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__btn {
+        width: 152px;
+        height: 48px;
+        background-color: none;
+        border: 1px solid $san_juan_blue;
+        border-radius: 24px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.115385px;
+        color: $san_juan_blue;
+        transition: 40ms ease all;
+
+        &:active {
+            transition: 40ms ease all;
+            background-color: $san_juan_blue;
+            color: $link_water_white;
+        }
+    }
+
+    &__right {
+        @include df-column-starts;
+        gap: 40px;
+    }
+
+    &__right-title {
+        width: 445px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.184615px;
+        color: $san_juan_blue;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+    }
+
+    &__right-images {
+        width: 100%;
+        max-width: 541px;
+        height: auto;
+    }
+}
+
+@media (max-width:1160px) {
+    .company {
+        margin-bottom: 100px;
+
+        &__container {
+            width: 100%;
+            max-width: 1160px;
+            @include df-column-center;
+            gap: 64px;
+        }
+
+        &__left {
+            width: 100%;
+            max-width: 445px;
+            height: auto;
+            @include df-column-center;
+
+        }
+
+        &__field textarea {
+            width: 100%;
+            @include df-column-starts;
+            padding-left: 20px;
+            padding-top: 15px;
+            gap: 24px;
+            border-bottom: 1px solid $san_juan_blue;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            transition: 40ms ease all;
+
+            &:focus {
+                opacity: 1;
+                border-bottom: 1px solid $san_juan_blue;
+                transition: 40ms ease all;
+            }
+        }
+
+        input[type="text"] {
+            width: 100%;
+            border-bottom: 1px solid $san_juan_blue;
+            padding-left: 20px;
+            padding-top: 24px;
+            padding-bottom: 15px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            transition: 40ms ease all;
+
+            &:focus {
+                opacity: 1;
+                border-bottom: 1px solid $san_juan_blue;
+                transition: 40ms ease all;
+            }
+        }
+
+        input[type="email"] {
+            width: 100%;
+            border-bottom: 1px solid $san_juan_blue;
+            padding-left: 20px;
+            padding-top: 24px;
+            padding-bottom: 15px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            transition: 40ms ease all;
+
+            &:focus {
+                opacity: 1;
+                border-bottom: 1px solid $san_juan_blue;
+                transition: 40ms ease all;
+            }
+        }
+
+        &__checkbox {
+            width: 100%;
+            width: 445px;
+            height: 50px;
+            margin: 0;
+            padding-top: 34px;
+            margin-bottom: 34px;
+            @include df-row-center;
+        }
+
+        &__checkbox-title {
+            margin-left: 24px;
+            width: 395px;
+            height: auto;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $san_juan_blue;
+        }
+
+        input[type="checkbox"] {
+            text-align: center;
+            line-height: 24px;
+            appearance: none;
+            -webkit-appearance: none;
+            width: 24px;
+            height: 24px;
+            background: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            cursor: pointer;
+            outline: none;
+            border: none;
+        }
+
+        input[type="checkbox"]:after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f00c";
+            font-size: 15px;
+            color: $white;
+            display: none;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: $dark_pink;
+            opacity: 1;
+        }
+
+        input[type="checkbox"]:checked:after {
+            display: block;
+        }
+
+        &__double-btns {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+        }
+
+        &__btn {
+            width: 152px;
+            height: 48px;
+            background-color: none;
+            border: 1px solid $san_juan_blue;
+            border-radius: 24px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: -0.115385px;
+            color: $san_juan_blue;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                background-color: $san_juan_blue;
+                color: $link_water_white;
+            }
+        }
+
+        &__right {
+            @include df-column-center;
+            gap: 40px;
+        }
+
+        &__right-title {
+            text-align: center;
+            width: 445px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.184615px;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.75;
+        }
+
+        &__right-images {
+            width: 100%;
+            max-width: 541px;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width:520px) {
+    .company {
+        overflow-x: hidden;
+        margin-bottom: 100px;
+
+        &__container {
+            width: 100%;
+            max-width: 520px;
+            @include df-column-center;
+            gap: 64px;
+        }
+
+        &__left {
+            width: 100%;
+            max-width: 307px;
+            margin: 0 auto;
+            height: auto;
+            @include df-column-center;
+        }
+
+        &__field {
+            width: 100%;
+            max-width: 273px;
+            @include df-column-center;
+            margin: 0 auto;
+        }
+
+        &__field textarea {
+            width: 100%;
+            max-width: 327px;
+            @include df-column-starts;
+            padding-left: 20px;
+            padding-top: 15px;
+            gap: 24px;
+            border-bottom: 1px solid $san_juan_blue;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            transition: 40ms ease all;
+
+            &:focus {
+                opacity: 1;
+                border-bottom: 1px solid $san_juan_blue;
+                transition: 40ms ease all;
+            }
+        }
+
+        input[type="text"] {
+            width: 100%;
+            max-width: 327px;
+            border-bottom: 1px solid $san_juan_blue;
+            padding-left: 20px;
+            padding-top: 24px;
+            padding-bottom: 15px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            transition: 40ms ease all;
+
+            &:focus {
+                opacity: 1;
+                border-bottom: 1px solid $san_juan_blue;
+                transition: 40ms ease all;
+            }
+        }
+
+        input[type="email"] {
+            width: 100%;
+            max-width: 327px;
+            border-bottom: 1px solid $san_juan_blue;
+            padding-left: 20px;
+            padding-top: 24px;
+            padding-bottom: 15px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            transition: 40ms ease all;
+
+            &:focus {
+                opacity: 1;
+                border-bottom: 1px solid $san_juan_blue;
+                transition: 40ms ease all;
+            }
+        }
+
+        &__checkbox {
+            width: 100%;
+            max-width: 273px;
+            height: 50px;
+            margin: 0;
+            padding-top: 34px;
+            margin-bottom: 54px;
+            @include df-row-center;
+        }
+
+        &__checkbox-title {
+            margin-left: 24px;
+            width: 277px;
+            height: auto;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $san_juan_blue;
+        }
+
+        input[type="checkbox"] {
+            text-align: center;
+            line-height: 24px;
+            appearance: none;
+            -webkit-appearance: none;
+            width: 30px;
+            height: 24px;
+            background: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            cursor: pointer;
+            outline: none;
+            border: none;
+        }
+
+        input[type="checkbox"]:after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f00c";
+            font-size: 15px;
+            color: $white;
+            display: none;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: $dark_pink;
+            opacity: 1;
+        }
+
+        input[type="checkbox"]:checked:after {
+            display: block;
+        }
+
+        &__double-btns {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+        }
+
+        &__btn {
+            width: 152px;
+            height: 48px;
+            background-color: none;
+            border: 1px solid $san_juan_blue;
+            border-radius: 24px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: -0.115385px;
+            color: $san_juan_blue;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                background-color: $san_juan_blue;
+                color: $link_water_white;
+            }
+        }
+
+        &__right {
+            @include df-column-center;
+        }
+
+        &__right-title {
+            text-align: center;
+            width: 327px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.184615px;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.75;
+        }
+
+        &__right-images {
+            width: 100%;
+            max-width: 327px;
+            height: auto;
+        }
+    }
+}

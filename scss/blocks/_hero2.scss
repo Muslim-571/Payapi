@@ -1,0 +1,60 @@
+.hero2 {
+    margin-top: 42px;
+    margin-bottom: 72px;
+
+    &__title {
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.430769px;
+        color: $san_juan_blue;
+    }
+}
+
+@media (max-width:800px) {
+    .hero2 {
+        margin-top: 38px;
+        margin-bottom: 69px;
+
+        &__container {
+            @include df-row-center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        &__title {
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369231px;
+            color: $san_juan_blue;
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .hero2 {
+        margin-top: 120px;
+        margin-bottom: 48px;
+
+        &__container {
+            @include df-row-center;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        &__title {
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: -0.246154px;
+            color: $san_juan_blue;
+        }
+    }
+}

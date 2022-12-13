@@ -1,0 +1,383 @@
+.hero {
+    &__container {
+        @include df-row-between
+    }
+
+    &__left-box {
+        margin-top: 0px;
+        width: 100%;
+        max-width: 546px;
+        @include df-column-starts;
+    }
+
+    &__title {
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -0.553846px;
+        color: $san_juan_blue;
+        margin-bottom: 43px;
+    }
+
+    &__form {
+        @include df-row-center;
+        margin-bottom: 16px;
+    }
+
+    &__main-input {
+        @include df-row-center;
+    }
+
+    &__input {
+        width: 445px;
+        height: 48px;
+        background: $link_water_white;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        border-radius: 24px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: $san_juan_blue;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        padding-left: 27px;
+
+        &:focus {
+            color: $san_juan_blue;
+            opacity: 1;
+        }
+    }
+
+    &__button {
+        transform: translateX(-173px);
+    }
+
+    &__text {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: $light_san_juan_blue;
+        padding-left: 27px;
+    }
+
+    span {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: $light_san_juan_blue;
+    }
+
+    &__smartphone {
+        transform: translateX(100px);
+    }
+}
+
+@media (max-width:1165px) {
+    .hero {
+        &__container {
+            transform: translateY(-50px);
+            width: 100%;
+            max-width: 1165px;
+            height: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 0;
+        }
+
+        &__left-box {
+            margin-top: 0px;
+            width: 100%;
+            max-width: 573px;
+            @include df-column-center;
+        }
+
+        &__title {
+            text-align: center;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369231px;
+            color: $san_juan_blue;
+            margin-bottom: 32px;
+        }
+
+        &__form {
+            @include df-row-center;
+            margin-bottom: 16px;
+        }
+
+        &__main-input {
+            @include df-column-center;
+        }
+
+        &__input {
+            width: 445px;
+            height: 48px;
+            background-color: $link_water_white;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            padding-left: 27px;
+
+            &:focus {
+                color: $san_juan_blue;
+                opacity: 1;
+            }
+        }
+
+        &__button {
+            transform: translate(136px, -48px);
+        }
+
+        &__text {
+            transform: translateY(-45px);
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $light_san_juan_blue;
+        }
+
+        span {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: $light_san_juan_blue;
+        }
+
+        &__smartphone {
+            z-index: 2;
+            width: 419px;
+            height: 660px;
+            transform: translateX(0);
+        }
+    }
+}
+
+@media (max-width:701px) {
+    .hero {
+        margin-bottom: 200px;
+
+        &__container {
+            transform: translateY(100px);
+            width: 100%;
+            max-width: 701px;
+            height: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 0;
+        }
+
+        &__left-box {
+            margin-top: 0px;
+            width: 100%;
+            max-width: 327px;
+            @include df-column-center;
+        }
+
+        &__title {
+            width: 327px;
+            text-align: center;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: -0.246154px;
+            color: $san_juan_blue;
+            margin-bottom: 32px;
+        }
+
+        &__form {
+            @include df-column-center;
+            margin-bottom: 24px;
+        }
+
+        &__main-input {
+            @include df-column-center;
+            gap: 16px;
+        }
+
+        &__input {
+            width: 327px;
+            height: 48px;
+            background-color: $link_water_white;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            padding-left: 27px;
+
+            &:focus {
+                color: $san_juan_blue;
+                opacity: 1;
+            }
+        }
+
+        &__button {
+            width: 327px;
+            height: 48px;
+            transform: translate(0, 0);
+        }
+
+        &__text {
+            padding: 0;
+            text-align: center;
+            transform: translateY(0);
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $light_san_juan_blue;
+        }
+
+        span {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: $light_san_juan_blue;
+        }
+
+        &__smartphone {
+            width: 419px;
+            height: 660px;
+            transform: translateX(35px);
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .hero {
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-bottom: 200px;
+
+        &__container {
+            transform: translateY(100px);
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 0;
+        }
+
+        &__left-box {
+            margin-top: 0px;
+            width: 100%;
+            max-width: 327px;
+            @include df-column-center;
+        }
+
+        &__title {
+            width: 327px;
+            text-align: center;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: -0.246154px;
+            color: $san_juan_blue;
+            margin-bottom: 32px;
+        }
+
+        &__form {
+            @include df-column-center;
+            margin-bottom: 24px;
+        }
+
+        &__main-input {
+            @include df-column-center;
+            gap: 16px;
+        }
+
+        &__input {
+            width: 327px;
+            height: 48px;
+            background-color: $link_water_white;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            padding-left: 27px;
+
+            &:focus {
+                color: $san_juan_blue;
+                opacity: 1;
+            }
+        }
+
+        &__button {
+            width: 327px;
+            height: 48px;
+            transform: translate(0, 0);
+        }
+
+        &__text {
+            width: 255px;
+            padding: 0;
+            text-align: center;
+            transform: translateY(0);
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $light_san_juan_blue;
+        }
+
+        span {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: $light_san_juan_blue;
+        }
+
+        &__smartphone {
+            width: 319px;
+            height: auto;
+            transform: translateX(20px);
+        }
+    }
+}

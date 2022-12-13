@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
-    <title>Home-page</title>
+    <title>Contact-page</title>
 </head>
 
 <body>
@@ -31,7 +34,7 @@
             </svg>
         </symbol>
     </svg>
-    <h1 class="visually-hidden">Home-page</h1>
+    <h1 class="visually-hidden">Contact-page</h1>
     <header class="header">
         <div class="container header__container">
             <div class="header__left-box">
@@ -41,7 +44,7 @@
                     <ul class="header__list">
                         <li class="header__lists"><a class="header__links" href="./pricing.html">Pricing</a></li>
                         <li class="header__lists"><a class="header__links" href="./about.html">About</a></li>
-                        <li class="header__lists"><a class="header__links" href="./contact.html">Contact</a></li>
+                        <li class="header__lists"><a class="header__links" href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,7 +57,7 @@
                     <ul class="menu__nav-list">
                         <li class="menu__nav-item"><a class="menu__nav-link" href="./pricing.html">Pricing</a></li>
                         <li class="menu__nav-item"><a class="menu__nav-link" href="./about.html">About</a></li>
-                        <li class="menu__nav-item"><a class="menu__nav-link" href="./contact.html">Contact</a></li>
+                        <li class="menu__nav-item"><a class="menu__nav-link" href="#">Contact</a></li>
                     </ul>
                 </nav>
                 <a class="menu__link" href="#">Schedule a Demo</a>
@@ -62,85 +65,57 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="container hero__container">
-                <div class="hero__left-box">
-                    <h2 class="hero__title">Start building with our APIs for absolutely free.</h2>
-                    <form class="hero__form" action="https://echo.htmlacademy.ru" method="post">
-                        <div class="hero__main-input">
-                            <label for="hero__username"></label>
-                            <input class="hero__input" type="email" name="user__name" id="hero__username"
-                                placeholder="Enter email address" required>
-                            <button class="hero__button link">Schedule a Demo</button>
+        <section class="hero4">
+            <div class="container hero4__container">
+                <h2 class="hero4__title">Submit a help request and
+                    we’ll get in touch shortly.</h2>
+            </div>
+        </section>
+        <section class="company">
+            <div class="container company__container">
+                <div class="company__left">
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <div class="company__field">
+                            <label for="company__name"></label>
+                            <input type="text" name="user__name" id="company__name" placeholder="Name" required
+                                autocomplete="off">
+                        </div>
+                        <div class="company__field">
+                            <label for="company__email"></label>
+                            <input type="email" name="user__email" id="company__email" placeholder="Email Address"
+                                required autocomplete="off">
+                        </div>
+                        <div class="company__field">
+                            <label for="company__company-name"></label>
+                            <input type="text" name="user__company-name" id="company__company-name"
+                                placeholder="Company Name" required autocomplete="off">
+                        </div>
+                        <div class="company__field">
+                            <label for="company__title"></label>
+                            <input type="text" name="user__title" id="company__title" placeholder="Title" required
+                                autocomplete="off">
+                        </div>
+                        <div class="company__field">
+                            <label for="company__message"></label>
+                            <textarea name="user__message" id="company__message" cols="1" rows="4" placeholder="Message"
+                                required autocomplete="off"></textarea>
+                        </div>
+                        <div class="company__checkbox">
+                            <label for="company__checkbox"></label>
+                            <input class="company__checkbox-btn" type="checkbox" name="user__checkbox"
+                                id="company__checkbox" required>
+                            <h6 class="company__checkbox-title">Stay up-to-date with company announcements and updates
+                                to our API</h6>
+                        </div>
+                        <div class="company__double-btns">
+                            <button class="company__btn" type="submit">Submit</button>
                         </div>
                     </form>
-                    <p class="hero__text">Have any questions? <span>Contact Us</span></p>
                 </div>
-                <img class="hero__smartphone" src="./images/smartphone.svg" alt="smartphone" width="419" height="660">
-            </div>
-        </section>
-        <section class="work">
-            <div class="container work__container">
-                <div class="work__left-box">
-                    <h3 class="work__title">Who we work with</h3>
-                    <p class="work__text">Today, millions of people around the world have successfully connected their
-                        accounts to apps they love using our API. We provide developers with the tools they need to
-                        create
-                        easy and accessible experiences for their users. </p>
-                    <a class="work__links" href="#">About Us</a>
-                </div>
-            </div>
-        </section>
-        <section class="implement">
-            <div class="container implement__container">
-                <img class="implement__carbon-image" src="./images/carbon__code-image.svg" alt="carbon__code"
-                    width="605" height="444">
-                <div class="implement__right-box">
-                    <h3 class="implement__title">Easy to implement</h3>
-                    <p class="implement__text">Our API comes with just a few lines of code. You’ll be up and running in
-                        no time. We built our documentation page to integrate payments functionality with ease.</p>
-                </div>
-            </div>
-        </section>
-        <section class="simple">
-            <div class="container simple__container">
-                <div class="simple__left-box">
-                    <h3 class="simple__title">Simple UI & UX</h3>
-                    <p class="simple__text">Our pre-built form is easy to integrate in your app or website’s checkout
-                        flow and designed to optimize conversion. </p>
-                </div>
-                <img class="simple__smartphone-image" src="./images/double__smartphones.svg" alt="double__smartphones"
-                    width="722" height="660">
-            </div>
-        </section>
-        <section class="finance">
-            <div class="container finance__container">
-                <div class="finance__main-box">
-                    <div class="finance__first-box">
-                        <img class="finance__images" src="./images/finances.svg" alt="personal__finances" width="106"
-                            height="106">
-                        <h4 class="finance__titles">Personal Finances</h4>
-                        <p class="finance__texts">Consolidate financial data from multiple sources and categorize
-                            transactions up to 2 years of history. Analyze reports to reconcile activities in your
-                            account.
-                        </p>
-                    </div>
-                    <div class="finance__second-box">
-                        <img class="finance__images" src="./images/coverage.svg" alt="banking__coverage" width="106"
-                            height="106">
-                        <h4 class="finance__titles">Banking & Coverage</h4>
-                        <p class="finance__texts">With our platform, you can speed up account onboarding and support
-                            ongoing
-                            payments for checking, savings, credit card, and brokerage accounts.</p>
-                    </div>
-                    <div class="finance__third-box">
-                        <img class="finance__images" src="./images/payments.svg" alt="consumer__payments" width="106"
-                            height="106">
-                        <h4 class="finance__titles">Consumer Payments</h4>
-                        <p class="finance__texts">It’s easier to set up secure bank payments with us through a flow
-                            designed
-                            with the user experience in mind. Customers could instantly authenticate their account.</p>
-                    </div>
+                <div class="company__right">
+                    <h5 class="company__right-title">Join the thousands of innovators already building with us</h5>
+                    <img class="company__right-images" src="./images/dark__grey-brands.svg" alt="second__brand-images"
+                        width="541" height="104">
                 </div>
             </div>
         </section>
@@ -167,7 +142,7 @@
                     <ul class="footer__list">
                         <li class="footer__lists"><a class="footer__links" href="./pricing.html">Pricing</a></li>
                         <li class="footer__lists"><a class="footer__links" href="./about.html">About</a></li>
-                        <li class="footer__lists"><a class="footer__links" href="./contact.html">Contact</a></li>
+                        <li class="footer__lists"><a class="footer__links" href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>

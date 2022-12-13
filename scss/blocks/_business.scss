@@ -1,0 +1,156 @@
+.business {
+    overflow-x: hidden;
+    margin-bottom: 100px;
+
+    &__container {
+        @include df-column-center;
+        gap: 56px
+    }
+
+    &__top-box {
+        margin-left: 49px;
+        @include df-row-start;
+        gap: 30px;
+    }
+
+    &__titles {
+        width: 255px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.246154px;
+        color: $san_juan_blue;
+    }
+
+    &__texts {
+        width: 635px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        color: $light_san_juan_blue;
+    }
+
+    &__bottom-box {
+        margin-left: 49px;
+        @include df-row-start;
+        gap: 30px;
+    }
+}
+
+@media (max-width:1105px) {
+    .business {
+        overflow-x: hidden;
+        margin-bottom: 100px;
+
+        &__container {
+            width: 100%;
+            max-width: 1105px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 56px
+        }
+
+        &__top-box {
+            width: 100%;
+            max-width: 689px;
+            height: auto;
+            margin-left: 0px;
+            @include df-row-start;
+            gap: 30px;
+        }
+
+        &__titles {
+            width: 223px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.246154px;
+            color: $san_juan_blue;
+        }
+
+        &__texts {
+            width: 456px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            color: $light_san_juan_blue;
+        }
+
+        &__bottom-box {
+            width: 100%;
+            max-width: 689px;
+            height: auto;
+            margin-left: 0px;
+            @include df-row-start;
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .business {
+        overflow-x: hidden;
+        margin-bottom: 72px;
+
+        &__container {
+            padding-left: 24px;
+            padding-right: 24px;
+            width: 100%;
+            max-width: 640px;
+            @include df-column-center;
+            gap: 48px;
+        }
+
+        &__top-box {
+            width: 100%;
+            max-width: 327px;
+            height: auto;
+            margin-left: 0px;
+            @include df-column-center;
+            gap: 0px;
+        }
+
+        &__titles {
+            text-align: center;
+            width: 255px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.184615px;
+            color: $san_juan_blue;
+            margin-bottom: 24px;
+        }
+
+        &__texts {
+            text-align: center;
+            width: 327px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            color: $light_san_juan_blue;
+        }
+
+        &__bottom-box {
+            width: 100%;
+            max-width: 327px;
+            height: auto;
+            margin-left: 0px;
+            @include df-column-center;
+            gap: 0px;
+        }
+    }
+}

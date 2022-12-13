@@ -1,6 +1,6 @@
 ::selection {
-    background-color: $black;
-    color: $white;
+    background-color: $san_juan_blue;
+    color: $light_grey;
 }
 
 *,
@@ -28,7 +28,9 @@ input,
 input:focus,
 button,
 button:focus,
-textarea {
+textarea,
+:focus {
+    background: none;
     border: none;
     outline: none;
     resize: none;
@@ -58,7 +60,7 @@ body {
     min-width: 320px;
     display: flex;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'DM Serif Display', 'Public Sans';
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -66,8 +68,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    background-color: $white;
-    color: $black;
+    background-color: $light_grey;
+    color: $san_juan_blue;
     overflow-x: hidden;
 }
 

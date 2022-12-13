@@ -1,0 +1,589 @@
+.free {
+    overflow-x: hidden;
+    margin-bottom: 96px;
+
+    &__container {
+        @include df-row-between;
+        gap: 30px
+    }
+
+    &__boxes {
+        @include df-column-starts;
+    }
+
+    &__mini-box {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        @include df-column-starts;
+    }
+
+    &__titles {
+        width: 350px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: start;
+        letter-spacing: -0.246154px;
+        color: $dark_pink;
+        margin-bottom: 27px;
+    }
+
+    &__texts {
+        width: 350px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        color: $light_san_juan_blue;
+        margin-bottom: 15px;
+    }
+
+    &__costs {
+        width: 350px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 72px;
+        letter-spacing: -0.430769px;
+        color: $san_juan_blue;
+    }
+
+    &__hr {
+        background-color: $san_juan_blue;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        width: 100%;
+        max-width: 350px;
+        height: 1;
+        margin: 24px 0 24px;
+    }
+
+    &__list {
+        margin-left: 30px;
+        width: 100%;
+        max-width: 134px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    &__links {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $san_juan_blue;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 13px;
+            height: 11px;
+            top: 25%;
+            left: -24px;
+            display: block;
+            background-image: url('../images/ticked.svg');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__disabled-links {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $san_juan_blue;
+        opacity: 0.6;
+    }
+
+    &__second-hr {
+        background-color: $san_juan_blue;
+        mix-blend-mode: normal;
+        opacity: 0.2;
+        width: 100%;
+        max-width: 350px;
+        height: 1;
+        margin: 24px 0 24px;
+    }
+
+    &__link {
+        text-align: center;
+        width: 168px;
+        height: 48px;
+        border: 1px solid $san_juan_blue;
+        border-radius: 24px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 48px;
+        letter-spacing: -0.115385px;
+        color: $san_juan_blue;
+        transition: 40ms ease all;
+
+        &:active {
+            transition: 40ms ease all;
+            background-color: $san_juan_blue;
+            color: $link_water_white;
+        }
+    }
+}
+
+@media (max-width:1180px) {
+    .free {
+        overflow-x: hidden;
+        margin-bottom: 96px;
+
+        &__container {
+            width: 100%;
+            max-width: 1180px;
+            @include df-row-between;
+            gap: 30px
+        }
+
+        &__boxes {
+            @include df-column-starts;
+        }
+
+        &__mini-box {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            @include df-column-starts;
+        }
+
+        &__titles {
+            width: 350px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 40px;
+            text-align: start;
+            letter-spacing: -0.246154px;
+            color: $dark_pink;
+            margin-bottom: 27px;
+        }
+
+        &__texts {
+            width: 350px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            color: $light_san_juan_blue;
+            margin-bottom: 15px;
+        }
+
+        &__costs {
+            width: 350px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 72px;
+            letter-spacing: -0.430769px;
+            color: $san_juan_blue;
+        }
+
+        &__hr {
+            background-color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            width: 100%;
+            max-width: 350px;
+            height: 1;
+            margin: 24px 0 24px;
+        }
+
+        &__list {
+            margin-left: 30px;
+            width: 100%;
+            max-width: 134px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        &__links {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $san_juan_blue;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 13px;
+                height: 11px;
+                top: 25%;
+                left: -24px;
+                display: block;
+                background-image: url('../images/ticked.svg');
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__disabled-links {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $san_juan_blue;
+            opacity: 0.6;
+        }
+
+        &__second-hr {
+            background-color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.2;
+            width: 100%;
+            max-width: 350px;
+            height: 1;
+            margin: 24px 0 24px;
+        }
+
+        &__link {
+            text-align: center;
+            width: 168px;
+            height: 48px;
+            border: 1px solid $san_juan_blue;
+            border-radius: 24px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 48px;
+            letter-spacing: -0.115385px;
+            color: $san_juan_blue;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                background-color: $san_juan_blue;
+                color: $link_water_white;
+            }
+        }
+    }
+}
+
+@media (max-width:880px) {
+    .free {
+        overflow-x: hidden;
+        margin-bottom: 100px;
+
+        &__container {
+            padding-left: 39px;
+            padding-right: 39px;
+            width: 100%;
+            max-width: 880px;
+            @include df-row-center;
+            gap: 10px
+        }
+
+        &__boxes {
+            width: 100%;
+            max-width: 223px;
+            @include df-column-center;
+        }
+
+        &__mini-box {
+            width: 100%;
+            max-width: 223px;
+            height: auto;
+            @include df-column-center;
+        }
+
+        &__titles {
+            width: 223px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: -0.184615px;
+            color: $dark_pink;
+            margin-bottom: 26px;
+        }
+
+        &__texts {
+            text-align: center;
+            width: 223px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            color: $light_san_juan_blue;
+            margin-bottom: 25px;
+        }
+
+        &__costs {
+            text-align: center;
+            width: 223px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 72px;
+            letter-spacing: -0.369231px;
+            color: $san_juan_blue;
+        }
+
+        &__hr {
+            background-color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            width: 100%;
+            max-width: 223px;
+            height: 1;
+            margin: 34px 0 24px;
+        }
+
+        &__list {
+            margin-left: -10px;
+            width: 100%;
+            max-width: 134px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        &__links {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $san_juan_blue;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 13px;
+                height: 11px;
+                top: 25%;
+                left: -34px;
+                display: block;
+                background-image: url('../images/ticked.svg');
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__disabled-links {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $san_juan_blue;
+            opacity: 0.6;
+        }
+
+        &__second-hr {
+            background-color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.2;
+            width: 100%;
+            max-width: 223px;
+            height: 1;
+            margin: 24px 0 24px;
+        }
+
+        &__link {
+            text-align: center;
+            width: 168px;
+            height: 48px;
+            border: 1px solid $san_juan_blue;
+            border-radius: 24px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 48px;
+            letter-spacing: -0.115385px;
+            color: $san_juan_blue;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                background-color: $san_juan_blue;
+                color: $link_water_white;
+            }
+        }
+    }
+}
+
+@media (max-width:750px) {
+    .free {
+        overflow-x: hidden;
+        margin-bottom: 80px;
+
+        &__container {
+            padding-left: 24px;
+            padding-right: 24px;
+            width: 100%;
+            max-width: 750px;
+            @include df-column-center;
+            gap: 48px
+        }
+
+        &__boxes {
+            width: 100%;
+            max-width: 327px;
+            @include df-column-center;
+        }
+
+        &__mini-box {
+            width: 100%;
+            max-width: 327px;
+            height: auto;
+            @include df-column-center;
+        }
+
+        &__titles {
+            width: 327px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: -0.184615px;
+            color: $dark_pink;
+            margin-bottom: 22px;
+        }
+
+        &__texts {
+            text-align: center;
+            width: 327px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            color: $light_san_juan_blue;
+            margin-bottom: 17px;
+        }
+
+        &__costs {
+            text-align: center;
+            width: 327px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 72px;
+            letter-spacing: -0.430769px;
+            color: $san_juan_blue;
+        }
+
+        &__hr {
+            background-color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            width: 100%;
+            max-width: 327px;
+            height: 1;
+            margin: 34px 0 24px;
+        }
+
+        &__list {
+            margin-left: 0px;
+            width: 100%;
+            max-width: 134px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        &__links {
+            margin-left: 25px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $san_juan_blue;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 13px;
+                height: 11px;
+                top: 25%;
+                left: -34px;
+                display: block;
+                background-image: url('../images/ticked.svg');
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__disabled-links {
+            margin-left: 25px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $san_juan_blue;
+            opacity: 0.6;
+        }
+
+        &__second-hr {
+            background-color: $san_juan_blue;
+            mix-blend-mode: normal;
+            opacity: 0.2;
+            width: 100%;
+            max-width: 327px;
+            height: 1;
+            margin: 24px 0 24px;
+        }
+
+        &__link {
+            text-align: center;
+            width: 168px;
+            height: 48px;
+            border: 1px solid $san_juan_blue;
+            border-radius: 24px;
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 48px;
+            letter-spacing: -0.115385px;
+            color: $san_juan_blue;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                background-color: $san_juan_blue;
+                color: $link_water_white;
+            }
+        }
+    }
+}

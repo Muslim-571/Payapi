@@ -1,0 +1,23 @@
+.link {
+    width: 173px;
+    height: 48px;
+    background-color: $dark_pink;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: $link_water_white;
+    transition: 40ms ease all;
+
+    &:active {
+        transition: 40ms ease all;
+        background: $charmpink_actives;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        border-radius: 24px;
+    }
+}

@@ -1,0 +1,98 @@
+.hero3 {
+    margin-top: 41px;
+    margin-bottom: 96px;
+
+    &__title {
+        margin-left: 86px;
+        width: 642px;
+        height: auto;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.430769px;
+        color: $san_juan_blue;
+    }
+}
+
+@media (max-width:900px) {
+    .hero3 {
+        margin-top: 41px;
+        margin-bottom: 63px;
+
+        &__container {
+            width: 100%;
+            max-width: 900px;
+            @include df-row-center;
+        }
+
+        &__title {
+            text-align: center;
+            margin-left: 0px;
+            width: 573px;
+            height: auto;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369231px;
+            color: $san_juan_blue;
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .hero3 {
+        margin-top: 100px;
+        margin-bottom: 47px;
+
+        &__container {
+            width: 100%;
+            max-width: 700px;
+            @include df-row-center;
+        }
+
+        &__title {
+            text-align: center;
+            margin-left: 0px;
+            width: 307px;
+            height: auto;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: -0.246154px;
+            color: $san_juan_blue;
+        }
+    }
+}
+
+@media (max-width:370px) {
+    .hero3 {
+        margin-top: 100px;
+        margin-bottom: 47px;
+
+        &__container {
+            width: 100%;
+            max-width: 370px;
+            @include df-row-center;
+        }
+
+        &__title {
+            text-align: center;
+            margin-left: 0px;
+            width: 327px;
+            height: auto;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: -0.246154px;
+            color: $san_juan_blue;
+        }
+    }
+}

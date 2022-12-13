@@ -1,0 +1,225 @@
+.footer {
+    background-color: $mirage_blue;
+    padding: 31px 0;
+    background-image: url('../images/right__bottom-grey-mask.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+
+    &__container {
+        @include df-row-between;
+    }
+
+    &__left-box {
+        @include df-row-center;
+        gap: 64px;
+    }
+
+    &__logo-image {
+        vertical-align: middle;
+        transition: 40ms ease all;
+
+        &:active {
+            transition: 40ms ease all;
+            opacity: 0.4;
+        }
+    }
+
+    &__list {
+        @include df-row-center;
+        gap: 40px;
+    }
+
+    &__links {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: $link_water_white;
+        mix-blend-mode: normal;
+        opacity: 0.7;
+        transition: 40ms ease all;
+
+        &:active {
+            color: $link_water_white;
+            transition: 40ms ease all;
+            opacity: 1;
+        }
+    }
+
+    &__svg-images {
+        @include df-row-center;
+        gap: 24px;
+    }
+
+    &__svg-link {
+        transition: 40ms ease all;
+        color: $link_water_white;
+
+        &:active {
+            transition: 40ms ease all;
+            color: $charmpink_actives;
+        }
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width:800px) {
+    .footer {
+        padding-top: 31px;
+        padding-bottom: 31px;
+        background-color: $mirage_blue;
+        background-image: url('../images/right__bottom-grey-mask.svg');
+        background-position: right;
+        background-repeat: no-repeat;
+
+        &__container {
+            padding-left: 39px;
+            padding-right: 39px;
+            width: 100%;
+            max-width: 800px;
+            @include df-row-between;
+        }
+
+        &__left-box {
+            @include df-row-center;
+            gap: 64px;
+        }
+
+        &__logo-image {
+            vertical-align: middle;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                opacity: 0.4;
+            }
+        }
+
+        &__list {
+            @include df-row-center;
+            gap: 40px;
+        }
+
+        &__links {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: $link_water_white;
+            mix-blend-mode: normal;
+            opacity: 0.7;
+            transition: 40ms ease all;
+
+            &:active {
+                color: $link_water_white;
+                transition: 40ms ease all;
+                opacity: 1;
+            }
+        }
+
+        &__svg-images {
+            @include df-row-center;
+            gap: 24px;
+        }
+
+        &__svg-link {
+            transition: 40ms ease all;
+            color: $link_water_white;
+
+            &:active {
+                transition: 40ms ease all;
+                color: $charmpink_actives;
+            }
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .footer {
+        background-color: $mirage_blue;
+        background-image: url('../images/bottom__grey-images.svg');
+        background-position: center top 325px;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &__container {
+            padding-top: 41px;
+            padding-bottom: 55px;
+            padding-left: 24px;
+            padding-right: 24px;
+            width: 100%;
+            max-width: 700px;
+            @include df-column-center;
+        }
+
+        &__left-box {
+            @include df-column-center;
+            gap: 40px;
+            margin-bottom: 39px;
+        }
+
+        &__logo-image {
+            vertical-align: middle;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                opacity: 0.4;
+            }
+        }
+
+        &__list {
+            @include df-column-center;
+            gap: 31px;
+        }
+
+        &__links {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: $link_water_white;
+            mix-blend-mode: normal;
+            opacity: 0.7;
+            transition: 40ms ease all;
+
+            &:active {
+                color: $link_water_white;
+                transition: 40ms ease all;
+                opacity: 1;
+            }
+        }
+
+        &__svg-images {
+            @include df-row-center;
+            gap: 24px;
+        }
+
+        &__svg-link {
+            transition: 40ms ease all;
+            color: $link_water_white;
+
+            &:active {
+                transition: 40ms ease all;
+                color: $charmpink_actives;
+            }
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

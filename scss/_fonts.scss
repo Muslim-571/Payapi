@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/dm-serif-display-v10-latin-regular.woff2') format('woff2'),
+        url('../fonts/dm-serif-display-v10-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/public-sans-v14-latin-regular.woff2') format('woff2'),
+        url('../fonts/public-sans-v14-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/public-sans-v14-latin-700.woff2') format('woff2'),
+        url('../fonts/public-sans-v14-latin-700.woff') format('woff');
+}

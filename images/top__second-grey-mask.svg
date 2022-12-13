@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="263" height="316" fill="none">
+    <g opacity=".15">
+        <circle cx="390" cy="-74" r="390" fill="#36536B" />
+        <circle cx="390" cy="-74" r="390" fill="#36536B" />
+        <mask id="a" width="780" height="780" x="0" y="-464" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+            <circle cx="390" cy="-74" r="390" fill="#fff" />
+        </mask>
+    </g>
+</svg>
