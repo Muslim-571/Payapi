@@ -2,7 +2,8 @@
     <g opacity=".15">
         <circle cx="188" cy="390" r="390" fill="#36536B" />
         <circle cx="188" cy="390" r="390" fill="#36536B" />
-        <mask id="a" width="780" height="780" x="-202" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+        <mask id="a" width="780" height="780" x="-202" y="0" maskUnits="userSpaceOnUse"
+            style="mask-type:alpha">
             <circle cx="188" cy="390" r="390" fill="#fff" />
         </mask>
     </g>
